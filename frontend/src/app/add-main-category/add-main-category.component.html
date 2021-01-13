@@ -1,0 +1,43 @@
+<div class="showcase">
+  <!-- Page content -->
+  <div id="page-content-wrapper">
+    <!-- Keep all page content within the page-content inset div! -->
+    <div class="page-content inset">
+      <div class="row">
+        <br>
+        <br>
+
+
+
+
+
+<div class="showcase">
+ 
+
+<div class="container">
+
+  <div class="row1">
+    
+    <form #userForm="ngForm" (ngSubmit)="  addmainCategory()"  >
+      <h3>Add MainCategory</h3>
+      <div class="form-group">
+        <label>MainCategory</label>
+        <input type="text" required #Mainname="ngModel" [class.is-invalid]="Mainname.invalid && Mainname.touched" class="form-control" name="title" [(ngModel)]="title"  >
+      <small [class.d-none]="Mainname.valid || Mainname.untouched">Main category requires</small>
+      </div>
+      
+          <div class="form-group">
+            <label>Slug</label>
+            <input type="text" required #Slug="ngModel" [class.is-invalid]="Slug.invalid && Slug.touched" class="form-control" name="slug" [(ngModel)]="slug"  >
+          <small [class.d-none]="Slug.valid || Slug.untouched">slug Required</small>
+          </div>
+     
+    <button class="btn btn-primary" [disabled]="!userForm.valid" type="submit">Submit</button>
+    </form>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+  </div>
